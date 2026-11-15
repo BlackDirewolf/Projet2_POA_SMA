@@ -3,6 +3,8 @@ from strategys.random_strat import Random_strat
 from strategys.tit_for_tat import Tit_for_tat_strat
 from strategys.tester import Tester_strat
 from strategys.joss import Joss_strat
+from strategys.avidity import Avidity_strat
+from strategys.pavlov import Pavlov_strat
 
 class Duelist():
     def __init__(self,name,strategy_name):
@@ -22,6 +24,10 @@ class Duelist():
             self.strategy = Tester_strat()
         elif(strategy_name == 'joss'):
             self.strategy = Joss_strat()
+        elif(strategy_name == 'avidity'):
+            self.strategy = Avidity_strat()
+        elif(strategy_name == 'pavlov'):
+            self.strategy = Pavlov_strat()
         else:
             print("Aucune stratégie n'a était reconnu")
 

@@ -97,12 +97,14 @@ def main(argv):
     duelist3 = Duelist("tit_for_tat","tit_for_tat")
     duelist4 = Duelist("tester","tester")
     duelist5 = Duelist("joss","joss")
+    duelist6 = Duelist("avidity","avidity")
+    duelist7 = Duelist("pavlov","pavlov")
 
 
   
     report = Tournament_report()
-    tournament([duelist1,duelist2,duelist3,duelist4,duelist5],5,200,report)
-    ranking([duelist1,duelist2,duelist3,duelist4,duelist5])
+    tournament([duelist6,duelist2,duelist3,duelist4,duelist5,duelist1,duelist7],5,200,report)
+    ranking([duelist6,duelist2,duelist3,duelist4,duelist5,duelist1,duelist7])
     report.display_report()
 
     
